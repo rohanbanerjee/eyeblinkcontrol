@@ -1,8 +1,10 @@
 import cv2
 
+#importing Haar Cascade Files
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 eye_cascade = cv2.CascadeClassifier('haarcascase-eye.xml')
 
+#Capture from Webcam
 cap = cv2.VideoCapture(0)
 c=0
 
