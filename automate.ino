@@ -1,8 +1,6 @@
 #include <FirebaseArduino.h>
  #include <ESP8266WiFi.h>
-char input[12];
-int count=0;
-int i=0;
+
 const char* ssid     = "#Enter Wifi Ssid";
 const char* password = "#Enter Wifi Password";
 #define FIREBASE_HOST "enter-your-projectname.firebaseio.com"
@@ -16,7 +14,7 @@ int wifiStatus;
 void setup() {
   
   Serial.begin(9600);
- // delay(200);
+ 
  pinMode(LED_BUILTIN, OUTPUT);
   
    WiFi.begin(ssid, password);
